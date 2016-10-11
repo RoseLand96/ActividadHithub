@@ -2,14 +2,14 @@ package controllers;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-import models.modelVolumenes;
+import models.ModelVolumenes;
 import views.ViewVolumenes;
 
 public class controllerVolumenes implements ActionListener{
-    private modelVolumenes modelVolumenes;
+    private ModelVolumenes modelVolumenes;
     private ViewVolumenes viewVolumenes;
 
-    public controllerVolumenes(modelVolumenes modelVolumenes, ViewVolumenes viewVolumenes) {
+    public controllerVolumenes(ModelVolumenes modelVolumenes, ViewVolumenes viewVolumenes) {
         this.modelVolumenes=modelVolumenes;
         this.viewVolumenes=viewVolumenes;
              

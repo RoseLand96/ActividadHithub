@@ -6,7 +6,7 @@
 package main;
 import models.*;
 import views.*;
-import controlllerss.*;
+import controllers.*;
 import javax.swing.JPanel;
 /**
  *
@@ -18,15 +18,21 @@ public class Main {
     {
       ViewAreas viewAreas=new ViewAreas();
       ModelAreas modelAreas=new ModelAreas();
-      ControllerArea controllerAreas=new ControllerArea(modelArea,viewArea);
+      ControllerArea controllerAreas=new ControllerArea(modelAreas,viewAreas);
       
-      ViewVolumen viewVolumen=new ViewVolumen();
-      ModelVolumen modelVolumen= new ModelVolumen();
-      ControllerVolumen controllerVolumen=new ControllerVolumen(modelVolumen,viewVolumen);
+      ViewVolumenes viewVolumen=new ViewVolumenes();
+      ModelVolumenes modelVolumen= new ModelVolumenes();
+      controllerVolumenes controllerVolumen=new controllerVolumenes(modelVolumen,viewVolumen);
       
-         JPanel view[]=new JPanel[2];
-                view[0]=viewArea;
+      ViewPerimetros viewP = new ViewPerimetros();
+      ModelPerimetros modelPerimetros = new ModelPerimetros();
+      ControllerPerimetros controllerPerimetros = new ControllerPerimetros(viewP,modelPerimetros);
+              
+      
+         JPanel view[]=new JPanel[3];
+                view[0]=viewAreas;
                 view[1]=viewVolumen;
+                view[2]=viewP;
     
        ViewMain viewMain= new ViewMain();
        ModelMain modelMain=new ModelMain();
@@ -38,3 +44,4 @@ public class Main {
     
     }
 }
+

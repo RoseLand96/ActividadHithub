@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 /**
  *
  * @author RoseLandjlord
+ * Prueba 1
  */
 public class Main {
    

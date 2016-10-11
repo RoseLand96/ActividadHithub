@@ -10,8 +10,7 @@ import controllers.*;
 import javax.swing.JPanel;
 /**
  *
- * @author RoseLandjlord
- * Prueba 1
+ * @author RoseLandjlord, Alfredo, Rose
  */
 public class Main {
    
